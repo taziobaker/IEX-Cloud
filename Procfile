@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run HistoricalPrices.py
+web: sh setup.sh && streamlit run LatestUpdatesOnStocks.py
