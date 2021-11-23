@@ -9,7 +9,7 @@ plt.rcParams['figure.figsize'] = (15,8)
 def get_historic_data(symbol):
     ticker = symbol
     iex_api_key = 'sk_085f05021f4847afb5ac0b5a15a4c78d'
-    api_url = f'https://sandbox.iexapis.com/stable/stock/{ticker}/chart/max?token={iex_api_key}'
+    api_url = f'https://sandbox.iexapis.com/stable/stock/{ticker}/chart/1d?token={iex_api_key}'
     df = requests.get(api_url).json()
     
     date = []
